@@ -1,0 +1,105 @@
+/*----------UTILS----------*/
+@import "./utils/mixins";
+@import "./utils/variables";
+
+/*----------COMPONENTS----------*/
+
+/*-----common-----*/
+@import "./components/common/dataTable";
+@import "./components/common/dataTableRow";
+@import "./components/common/paging";
+@import "./components/common/error";
+@import "./components/common/header";
+@import "./components/common/navBar";
+
+/*-----discount-----*/
+@import "./components/discount/dashboardDiscount";
+@import "./components/discount/discount";
+@import "./components/discount/discountAdd";
+@import "./components/discount/discountEdit";
+
+/*-----authentification-----*/
+@import "./components/authentication/authentificationForm";
+@import "./components/authentication/authentificationFormRow";
+
+/*-----naviation-----*/
+@import "./components/navigation/addReviewNavbar";
+@import "./components/navigation/dashboardDiscountsNavbar";
+@import "./components/navigation/dashboardEditViewNavbar";
+@import "./components/navigation/dashboardHomeDiscountNavbar";
+@import "./components/navigation/dashboardHomeRoomNavbar";
+@import "./components/navigation/dashboardHomeRoomTypeNavbar";
+@import "./components/navigation/dashboardNavigation";
+@import "./components/navigation/dashboardReceiptsNavbar";
+@import "./components/navigation/dashboardReservationsNavbar";
+@import "./components/navigation/dashboardRoomNavbar";
+@import "./components/navigation/dashboardRoomTypeNavbar";
+@import "./components/navigation/dashboardServicesHomeNavbar";
+@import "./components/navigation/dashboardServicesNavbar";
+@import "./components/navigation/homePageNavbar";
+
+/*-----filter-----*/
+@import "./components/filter/dashboardReceiptFilter";
+@import "./components/filter/dashboardReservationFilter";
+@import "./components/filter/dashboardRoomFilter";
+@import "./components/filter/filterDateSelectAdmin";
+@import "./components/filter/filterDateSelectUser";
+@import "./components/filter/filterIsPaidReceipt";
+@import "./components/filter/filterNumberOfBeds";
+@import "./components/filter/filterPriceRange";
+@import "./components/filter/filterRoomTypes";
+@import "./components/filter/filterSearchQuery";
+@import "./components/filter/roomFilter";
+
+/*-----profile-----*/
+@import "./components/profile/editPassword";
+@import "./components/profile/editProfile";
+@import "./components/profile/profile";
+@import "./components/profile/profileData";
+
+/*-----reservation-----*/
+@import "./components/reservation/reservationAdd";
+@import "./components/reservation/reservationForm";
+@import "./components/reservation/reservationViewEdit";
+
+/*-----review-----*/
+@import "./components/review/review";
+@import "./components/review/reviewAdd";
+@import "./components/review/reviews";
+
+/*-----room-----*/
+@import "./components/room/roomList";
+@import "./components/room/roomForm";
+
+/*----------PAGES----------*/
+@import "./pages/homePage";
+@import "./pages/loginPage";
+@import "./pages/registerPage";
+@import "./pages/roomDetailsPage";
+@import "./pages/roomsPage";
+@import "./pages/profilePage";
+@import "./pages/addDiscountPage";
+@import "./pages/addReviewPage";
+@import "./pages/addRoomTypePage";
+@import "./pages/addServicePage";
+@import "./pages/dashboardAddRoomPage";
+@import "./pages/dashboardDiscountPage";
+@import "./pages/dashboardReceiptEditPage";
+@import "./pages/dashboardReceiptPage";
+@import "./pages/dashboardReservationPage";
+@import "./pages/dashboardReservationViewEditPage";
+@import "./pages/dashboardRoomEditPage";
+@import "./pages/dashboardRoomTablePage";
+@import "./pages/dashboardRoomTypePage";
+@import "./pages/dashboardServicesPage";
+@import "./pages/editDiscountPage";
+@import "./pages/editRoomTypePage";
+@import "./pages/editServicePage";
+@import "./pages/myReservationPage";
+
+/*----------BASE----------*/
+@import "./base/resets";
+@import "./base/base";
+@import "./base/filters";
+/*----------LAYOUT----------*/
+@import "./layout/layout";

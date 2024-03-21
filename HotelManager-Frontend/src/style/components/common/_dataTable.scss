@@ -1,0 +1,37 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.data-table {
+  width: 70vw;
+  max-height: 80vh;
+
+  .data-table-header {
+    background-color: $primary;
+    color: white;
+
+    .data-table-header-row-cell {
+      height: 4vh;
+      padding-top: 0.7rem;
+    }
+  }
+}
+
+.data-table-body {
+  .data-table-body-row {
+    height: 4vh;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 0.2rem;
+  }
+}
+.data-table-body-row-cell-handle-button {
+  width: 5vw;
+  height: 3vh;
+  font-size: 0.9rem;
+  background-color: $accent;
+  color: white;
+}
+
+.data-table-body-row-cell {
+  padding-top: 0.5rem;
+}

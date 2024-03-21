@@ -1,0 +1,53 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.profile {
+  @include displayFlexColumn();
+  gap: 2rem;
+  align-items: flex-start;
+  .profile-forms {
+    @include displayFlexRow();
+    width: 50vw;
+    gap: 5vw;
+  }
+}
+
+.profile-form {
+  border-radius: 0.8rem;
+  width: 20vw;
+  height: 40vh;
+  background-color: white;
+  @include displayFlexColumn();
+  gap: 1rem;
+  .form-heading {
+    font-size: 1.3rem;
+  }
+  .form {
+    @include displayFlexColumn();
+    gap: 1rem;
+  }
+
+  .form-input {
+    height: 3.5vh;
+    width: 10vw;
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+    border: 0.01rem solid black;
+    border-radius: 0.8rem;
+  }
+
+  .form-submit-button {
+    height: 5vh;
+    width: 5vw;
+    font-size: 1rem;
+    background-color: $dark;
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    transition: 250ms;
+    &:hover {
+      scale: 1.1;
+      cursor: pointer;
+    }
+  }
+}

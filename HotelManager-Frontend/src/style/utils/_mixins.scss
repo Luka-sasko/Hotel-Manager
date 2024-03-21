@@ -1,0 +1,20 @@
+@import "./variables";
+@mixin displayFlexRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@mixin displayFlexColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin displayFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

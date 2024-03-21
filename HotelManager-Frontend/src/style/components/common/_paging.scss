@@ -1,0 +1,14 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+.paging {
+  margin-top: 1rem;
+  @include displayFlexRow();
+  .paging-button {
+    height: 4vh;
+    width: 2vw;
+    font-size: 1.2rem;
+    color: white;
+    background-color: $dark;
+    border-radius: 0.2rem;
+  }
+}

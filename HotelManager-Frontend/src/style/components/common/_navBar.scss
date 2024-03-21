@@ -1,0 +1,8 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.navbar {
+  width: 20vw;
+  height: 91vh;
+  background-color: $primary;
+}

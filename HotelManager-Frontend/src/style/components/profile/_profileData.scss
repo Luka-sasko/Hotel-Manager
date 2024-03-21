@@ -1,0 +1,12 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.profile-data {
+  background-color: white;
+  width: 50vw;
+  height: 30vh;
+  border-radius: 0.8rem;
+  @include displayFlexColumn();
+  gap: 1rem;
+  font-size: 2rem;
+}

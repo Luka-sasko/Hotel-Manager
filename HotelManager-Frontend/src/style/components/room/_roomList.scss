@@ -1,0 +1,39 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.room-list {
+  @include displayFlexColumn();
+  justify-content: start;
+  padding: 5vh 0;
+  width: 80vw;
+  gap: 5vh;
+  height: 91vh;
+  overflow-y: scroll;
+  .room-link {
+    padding-right: 1vw;
+    width: 70vw;
+    height: 20vh;
+    background-color: $primary;
+    border-radius: 0.8rem;
+    @include displayFlexRow();
+    justify-content: space-between;
+    .room-link-image {
+      width: 15vw;
+      height: 20vh;
+    }
+    .room-link-info {
+      @include displayFlexColumn();
+      gap: 10vh;
+      .room-link-number {
+        font-size: 2rem;
+      }
+      .room-link-price {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.room-list::-webkit-scrollbar {
+  display: none;
+}

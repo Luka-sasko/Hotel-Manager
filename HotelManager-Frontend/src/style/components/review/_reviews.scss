@@ -1,0 +1,18 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.reviews-heading {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.reviews-list {
+  @include displayFlexColumn();
+  justify-content: flex-start;
+  width: 95vw;
+  height: 30vh;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.4rem 0.5rem gray;
+}

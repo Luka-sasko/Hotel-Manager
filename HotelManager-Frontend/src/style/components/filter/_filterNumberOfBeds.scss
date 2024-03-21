@@ -1,0 +1,10 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.number-of-beds-row {
+  @include displayFlexRow();
+  gap: 1rem;
+  .number-of-beds-input {
+    width: 3.5vw;
+  }
+}

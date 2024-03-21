@@ -1,0 +1,12 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.range-price {
+  @include displayFlexColumn();
+  gap: 1rem;
+  .input-container {
+    @include displayFlexRow();
+    justify-content: flex-start;
+    gap: 1vw;
+  }
+}

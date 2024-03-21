@@ -1,0 +1,12 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.submit-filter {
+  width: 3.5vw;
+  height: 3vh;
+  font-size: 0.9rem;
+  background-color: $dark;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+}

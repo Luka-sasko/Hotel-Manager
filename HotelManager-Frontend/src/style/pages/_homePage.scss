@@ -1,0 +1,44 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.header {
+  position: sticky;
+  height: 9vh;
+  width: 100vw;
+  background-color: $dark;
+  color: white;
+  @include displayFlexRow();
+  justify-content: space-between;
+  padding: 0 10vw;
+}
+
+.main {
+  height: 91vh;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  .page {
+    @include displayFlexRow();
+    justify-content: space-between;
+    .navbar {
+      @include displayFlexColumn();
+      justify-content: flex-start;
+      padding-top: 1vh;
+    } /* 
+    .navbar-room-dashboard {
+      height: 100% !important;
+    } */
+    .container {
+      @include displayFlexColumn();
+      justify-content: flex-start;
+      padding-top: 1vh;
+      width: 80vw;
+      height: 91vh;
+    }
+  }
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}

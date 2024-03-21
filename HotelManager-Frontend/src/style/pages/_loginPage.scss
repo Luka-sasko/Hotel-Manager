@@ -1,0 +1,60 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.authentification-page {
+  @include displayFlexColumn();
+  justify-content: flex-start;
+  padding-top: 10vh;
+  gap: 5vh;
+  height: 91vh;
+  width: 100vw;
+  .authentification-page-header {
+    font-size: 3rem;
+  }
+
+  .login-register-handle {
+    @include displayFlexRow();
+    gap: 0.5rem;
+  }
+
+  .login-register-link {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    transition: 250ms;
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .authentication-form-header {
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+  }
+  .authentication-form-row {
+    @include displayFlexRow();
+    justify-content: space-between;
+    font-size: 1.3rem;
+    width: 20vw;
+    padding: 0.5rem 0;
+    .authentication-form-row-input {
+      font-size: 0.9rem;
+      height: 4vh;
+      width: 10vw;
+      padding-left: 0.5rem;
+      border-radius: 0.8rem;
+      border: 0.05rem solid black;
+    }
+  }
+  .authentication-form-button {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: $dark;
+    color: white;
+    border-radius: 0.8rem;
+    transition: 250ms;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}

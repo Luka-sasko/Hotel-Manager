@@ -1,0 +1,58 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.room-detail {
+  padding-top: 5vh;
+  @include displayFlexColumn();
+  .room-detail-image {
+    width: 25vw;
+    height: 25vh;
+  }
+
+  .room-info-section {
+    @include displayFlexRow();
+    gap: 2rem;
+  }
+  .room-detail-info {
+    background-color: $dark;
+    color: white;
+    width: 25vw;
+    height: 25vh;
+    @include displayFlexColumn();
+    gap: 1rem;
+    font-size: 1.3rem;
+    border-radius: 0.8rem;
+  }
+
+  .discount-reservation-form {
+    padding-top: 2rem;
+    @include displayFlexRow();
+    gap: 3rem;
+    .reservation-data {
+      @include displayFlexColumn();
+    }
+    .discount-form {
+      .discount-form-input {
+        width: 10vw;
+        height: 4vh;
+        padding-left: 0.5rem;
+        border: 0.1rem solid black;
+        border-radius: 0.8rem;
+        font-size: 0.9rem;
+      }
+      .discount-form-button {
+        height: 4vh;
+        width: 5vw;
+        background-color: $dark;
+        color: white;
+        font-size: 1rem;
+        margin: 0.5rem;
+        border-radius: 0.8rem;
+        transition: 250ms;
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}

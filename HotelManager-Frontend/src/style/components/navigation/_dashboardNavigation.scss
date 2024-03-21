@@ -1,0 +1,32 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.dashboard-navigation {
+  @include displayFlexColumn();
+  gap: 0.7rem;
+  background-color: $dark;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 0.8rem;
+  .dashboard-navigation-header {
+    font-size: 2rem;
+    border-bottom: 0.1rem solid white;
+  }
+  .navigation {
+    @include displayFlexColumn();
+  }
+}
+
+.add-link {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: white;
+}
+
+.active {
+  scale: 1.2;
+  padding: 0.5rem 0;
+  color: $accent;
+}
